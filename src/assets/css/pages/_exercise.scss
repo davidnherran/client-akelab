@@ -1,0 +1,48 @@
+.exercise {
+    display: flex;
+    height: calc(100vh - 50px);
+    justify-content: center;
+    align-items: center;
+    &__container {
+        height: 500px;
+        width: 840px;
+        padding: 20px 40px;
+        &-title {
+            text-align: center;
+        }
+        h1{
+            font-size: calc(var(--font-size-base) * 2);
+            color: var(--text-primary);
+        }
+        p {
+            padding-bottom: 25px;
+        }
+        button {
+            background-color: var(--background-secondary);
+            color: var(--text-secondary);
+            height: 40px;
+            width: 40px;
+            float: right;
+            transform: translateY(-40px);
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+    }
+    &__output {
+        margin-top: 30px;
+        padding-bottom: 50px;
+        &-square {
+            text-align: justify;
+            background-color: #c3c6cc;
+            border-radius: 2px;
+            padding: 4px 6px;
+            display: inline-block;
+            margin: 6px 16px 6px 0;
+        }
+    }
+    &__error {
+        color: var(--text-error);
+    }
+}

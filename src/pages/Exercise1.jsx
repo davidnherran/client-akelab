@@ -33,19 +33,30 @@ const Exercise1 = () => {
 
   return (
     <>
-      <div>
-        <CustomForm validate={validate} onChange={setLengthSerie} />
-        {error
-          ? <p>{error}</p>
-          : (
-            <div>
-              {fibonacciSerie.map((number, index) => (
-                <div key={index}>
-                  {number}
-                </div>
-              ))}
-            </div>
-            )}
+      <div className='exercise'>
+        <div className='exercise__container'>
+          <div className='exercise__container-title'>
+            <h1>Sucesi&oacute;n de Fibonacci</h1>
+            <p>
+              Ingresa un n&uacute;mero indicando la longitud de campos que deseas obtener en la
+              serie de Fibonacci, debes ingresar un n&uacute;mero mayor a cero y
+              menor a 1000, este &uacute;ltimo con el fin de evitar un
+              desbordamiento de búfer.
+            </p>
+          </div>
+          <CustomForm validate={validate} onChange={setLengthSerie} />
+          {error
+            ? <p className='exercise__error'>{error}</p>
+            : (
+              <div className='exercise__output'>
+                {fibonacciSerie.map((number, index) => (
+                  <div key={index} className='exercise__output-square'>
+                    {number}
+                  </div>
+                ))}
+              </div>
+              )}
+        </div>
       </div>
     </>
   )

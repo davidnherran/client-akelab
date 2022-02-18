@@ -1,0 +1,17 @@
+body {
+    font-family: var(--font-face);
+}
+* {
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.container {
+    padding: 20px 50px;
+}
