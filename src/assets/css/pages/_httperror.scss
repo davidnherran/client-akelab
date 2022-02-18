@@ -1,0 +1,16 @@
+.http__error {
+    background-color: rgb(209, 209, 209);
+    height: calc(100vh - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1 {
+        font-size: calc(var(--font-size-base) * 3);
+        color: var(--text-primary);
+    }
+    p {
+        font-size: calc(var(--font-size-base) * 1);
+        color: var(--text-primary)
+    }
+}
