@@ -5,6 +5,7 @@ const Navbar = () => {
     <div className='navbar'>
       <NavLink to='/exercise1'>Sucesi&oacute;n de Fibonacci</NavLink>
       <NavLink to='/exercise2'>Serie Akelab</NavLink>
+      <NavLink to='/exercise3'>Películas</NavLink>
     </div>
   )
 }
