@@ -1,0 +1,21 @@
+.card {
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    border: 1.5px solid #4F4F4F;
+    width: 477px;
+    height: 345px;
+    &__body {
+        &-img {
+            width: 180px;
+            height: 270px;
+            display: inline-block;
+        }
+        &-overview {
+            width: 290px;
+            float: right;
+            p {
+               margin: 0;
+            }
+        }
+    }
+}
