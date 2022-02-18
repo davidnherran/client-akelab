@@ -6,7 +6,9 @@
     --text-secondary: rgb(241, 241, 241);
     --text-error: rgb(170, 1, 1);
     --font-size-base: 22px;
+    --font-size-primary: 14px;
     --font-face: 'Futura LT Regular';
+    --dark-gray-secondary: #3F3F3F;
 }
 body {
     font-family: var(--font-face);

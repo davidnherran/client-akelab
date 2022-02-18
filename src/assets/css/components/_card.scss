@@ -4,17 +4,40 @@
     border: 1.5px solid #4F4F4F;
     width: 477px;
     height: 345px;
+    padding: 18px 21px 19px 21px;
+    h2 {
+        margin: 0;
+        font-size: var(--font-size-primary);
+        color: var(--dark-gray-secondary);
+    }
     &__body {
         &-img {
+            margin-top: 13px;
             width: 180px;
             height: 270px;
             display: inline-block;
         }
         &-overview {
-            width: 290px;
+            height: 284px;
+            padding-top: 10px;
+            width: 233px;
             float: right;
             p {
+                font-size: 12px;
+                height: 162px;
                margin: 0;
+               line-height: 16px;
+               color: #6D6E70;
+            }   
+        }
+        &-description {
+            margin-top: 46px;
+            font-size: 12px;
+            color: #6D6E70;
+            bottom: 0;
+            line-height: 16px;
+            span {
+            font-weight: bold;
             }
         }
     }

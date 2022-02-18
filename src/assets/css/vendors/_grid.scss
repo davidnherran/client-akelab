@@ -1,5 +1,6 @@
 body {
     font-family: var(--font-face);
+    overflow-y: hidden;
 }
 * {
     box-sizing: border-box;
@@ -13,5 +14,5 @@ body {
     grid-row-gap: 20px;
 }
 .container {
-    padding: 20px 50px;
+    padding: 41px 53px;
 }
