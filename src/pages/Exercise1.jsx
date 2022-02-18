@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import CustomForm from '../components/CustomForm'
+import Navbar from '../components/Navbar'
 
 const Exercise1 = () => {
   const [lengthSerie, setLengthSerie] = useState('')
@@ -33,6 +34,7 @@ const Exercise1 = () => {
 
   return (
     <>
+      <Navbar />
       <div className='exercise'>
         <div className='exercise__container'>
           <div className='exercise__container-title'>

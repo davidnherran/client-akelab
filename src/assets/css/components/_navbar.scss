@@ -1,0 +1,16 @@
+.navbar {
+    height: 50px;
+    padding: 12px;
+    background-color: var(--background-secondary);
+    box-shadow: var(--box-shadow);
+    .active {
+        color: rgb(255, 255, 255);
+    }
+    a{
+        text-decoration: none;
+        color: var(--text-secondary); 
+        font-size: calc(var(--font-size-base) - 2px);
+        padding: 0 10px;
+        font-family: Lato;
+    }
+}
