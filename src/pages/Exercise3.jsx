@@ -88,7 +88,6 @@ const Exercise3 = () => {
     setListMovies(result)
   }
 
-  /* FIltrar movies por genrer */
   const filterMoviesByGenrer = (genrerId) => {
     const result = movies.filter((element) => {
       if (element.genre_ids.includes(genrerId)) {
@@ -108,7 +107,7 @@ const Exercise3 = () => {
         <div className='movies__filter'>
           <img className='movies__filter-icon' src={filter} alt='' />
         </div>
-        <div className='movies__sort' onClick={() => { filterMoviesByGenrer(18, 12) }}>
+        <div className='movies__sort' onClick={() => { /* Provisional */ filterMoviesByGenrer(18, 12) }}>
           Ordenar <img className='movies__sort-icon' src={sort} />
         </div>
         <div className='movies__scrollable'>
